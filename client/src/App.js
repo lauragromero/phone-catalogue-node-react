@@ -6,6 +6,8 @@ import PhoneDetail from './components/PhoneDetail';
 import PhoneList from './components/PhoneList';
 import './stylesheets/App.scss';
 
+const url= 'http://localhost:3002/';
+
 class App extends React.Component{
 constructor(props) {
   super(props);
@@ -35,6 +37,7 @@ isLoadingChange() {
 renderRouterDetail(props){
   const routerId = props.match.params.id;
   return <PhoneDetail phoneDetail ={routerId}
+                      url={url}
                       phones={this.state.phones}
                           />
 }
@@ -47,7 +50,8 @@ renderRouterDetail(props){
       <Switch>
           <Route path="/" exact>
             <PhoneList
-              phonesList= {this.state.phones}/>
+              phonesList= {this.state.phones}
+              url= {url}/>
           </Route>
         <Route path="/phone/:id" render={this.renderRouterDetail}></Route>
         </Switch>

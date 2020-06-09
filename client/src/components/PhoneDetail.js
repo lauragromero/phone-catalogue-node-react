@@ -10,7 +10,7 @@ const PhoneDetail = (props)=>{
             return(
                 <div  className="detail__container" key={item.id}>
                     <div className= "detail__image">
-                        <img src={`../images/${item.imageFileName}`} alt={item.name}/>
+                        <img src={props.url + item.imageFileName} alt={item.name}/>
                     </div>
                     <div className= "detail__info">
                         <div className="detail__header">

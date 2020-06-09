@@ -1,7 +1,7 @@
 import React from 'react';
 const PhoneCard=(props)=>{
     console.log(props.name)
-    const {image, name, price, brand} = props
+    const {url, image, name, price, brand} = props
     return (
         <React.Fragment>
             <div className="phone__container">
@@ -16,7 +16,7 @@ const PhoneCard=(props)=>{
                 </div>
             </div>
             <div className="phone__img">
-            <img src={image} alt={name}/>
+            <img src={url+image} alt={name}/>
             </div>
            
         </React.Fragment>

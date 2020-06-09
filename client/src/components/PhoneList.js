@@ -9,6 +9,7 @@ const PhoneList = (props)=> {
            <li className="phone__list" key={item.id}>
                <Link to={`/phone/${item.id}`}>
                    <PhoneCard
+                    url= {props.url}
                     name={item.name}
                     brand= {item.manufacturer}
                     price= {item.price}
