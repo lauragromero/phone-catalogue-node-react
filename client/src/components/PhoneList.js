@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PhoneCard from '../PhoneCard/PhoneCard';
+import PhoneCard from './PhoneCard';
 
 const PhoneList = (props)=> {
    console.log(props.phonesList)

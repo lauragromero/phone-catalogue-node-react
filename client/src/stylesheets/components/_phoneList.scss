@@ -18,7 +18,7 @@
     height: rem(220);
     display: flex;
     justify-content: center;
-    border: 1px solid black;
+    border: 1px solid rgb(54, 54, 54);
     border-radius: rem(10);
         @include tablet {
             width: rem(250);

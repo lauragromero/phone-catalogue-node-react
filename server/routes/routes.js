@@ -1,18 +1,7 @@
+const phoneRoutes = require("./phones.js");
+
 const appRouter = (app, fs) => {
-    const dataPath = "./data/phones.json";
-
-    // READ
-    app.get("/phones", (req, res) => {
-      fs.readFile(dataPath, "utf8", (err, data) => {
-        if (err) {
-          throw err;
-        }
-        res.send(JSON.parse(data));
-      });
-    });
-
+  phoneRoutes(app, fs);
 };
-
-
 
 module.exports = appRouter;

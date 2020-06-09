@@ -16,7 +16,7 @@ const PhoneCard=(props)=>{
                 </div>
             </div>
             <div className="phone__img">
-            <img src={`./images/${image}`} alt={name}/>
+            <img src={image} alt={name}/>
             </div>
            
         </React.Fragment>

@@ -4,24 +4,19 @@ const bodyParser = require ('body-parser');
 const express = require('express');
 const app = express();
 const cors = require('cors');
+const fs = require("fs");
+
 
 //rutas
 app.use(bodyParser.urlencoded({extended: false})); 
 app.use(bodyParser.json());
 app.use(cors());
 app.use(express.json());
+app.use(express.static('images'));
 
-const data = require('./data/phones.json')
+const routes = require("./routes/routes.js")(app, fs);
 
 
-app.get("/phones", (req, res) => {
-    res.status(200).json(data);
-});
-
-app.get("/phones/:id", (req, res) => {
-    const id = req.params.id;
-    res.status(200).json(data[id]);
-});
 
 const appPort = process.env.PORT || 3002; 
 
