@@ -18,7 +18,7 @@
     height: rem(220);
     display: flex;
     justify-content: center;
-    border: 1px solid rgb(5, 95, 168);
+
     background-color: white;
     border-radius: rem(10);
         @include tablet {
@@ -27,12 +27,8 @@
     }
     &:hover{
         transition: all 0.5s ease;
-        height:rem(230);
-        width: rem(160);
-        @include tablet {
-            width: rem(260);
-            height: rem(330);
-    }
+        box-shadow: 7px 12px 13px 1px rgba(153,153,153,0.71);
+        
         }
 
 

@@ -7,7 +7,6 @@ const cors = require('cors');
 const fs = require("fs");
 
 
-//rutas
 app.use(bodyParser.urlencoded({extended: false})); 
 app.use(bodyParser.json());
 app.use(cors());
@@ -16,8 +15,6 @@ app.use('/images', express.static('./data/images'));
 
 
 const routes = require("./routes/routes.js")(app, fs);
-
-
 
 const appPort = process.env.PORT || 3002; 
 
