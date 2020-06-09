@@ -1,6 +1,5 @@
 import React from 'react';
 const PhoneCard=(props)=>{
-    console.log(props.name)
     const {url, image, name, price, brand} = props
     return (
         <React.Fragment>

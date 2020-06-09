@@ -1,9 +1,10 @@
 import React from 'react';
 
+
 const Header =()=>{
     return(
         <header className="App-header">
-            <h1>MovilShop</h1>
+            <h1>Phone Catalogue</h1>
         </header>
     )
 }

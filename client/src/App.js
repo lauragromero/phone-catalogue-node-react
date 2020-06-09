@@ -20,10 +20,9 @@ constructor(props) {
 }
 
 componentDidMount(){
-  axios.get('http://localhost:3002/phones')
+  axios.get(`${url}phones`)
   .then(res=>{
     const phones = res.data;
-    console.log(phones)
     this.setState({
       phones:phones, 
       isLoading: false})
@@ -43,7 +42,6 @@ renderRouterDetail(props){
 }
 
   render(){
-    console.log(this.state.phones)
     return (
     <div className="App">
      <Header/>

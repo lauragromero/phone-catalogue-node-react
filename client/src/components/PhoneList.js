@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import PhoneCard from './PhoneCard';
 
 const PhoneList = (props)=> {
-   console.log(props.phonesList)
    const phoneList= props.phonesList.map(item=>{
        return(
            <li className="phone__list" key={item.id}>

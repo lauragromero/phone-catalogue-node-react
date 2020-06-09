@@ -18,7 +18,8 @@
     height: rem(220);
     display: flex;
     justify-content: center;
-    border: 1px solid rgb(54, 54, 54);
+    border: 1px solid rgb(5, 95, 168);
+    background-color: white;
     border-radius: rem(10);
         @include tablet {
             width: rem(250);
@@ -73,6 +74,7 @@
                 margin: rem(4) 0;
                 font-size: rem(9);
                 .phone__title{
+                    color: rgb(5, 95, 168);
                     margin: 0;
                     font-size: rem(14);
                     @include tablet{
